@@ -37,12 +37,12 @@ public class BasicTitleDescriptionScreen extends ScreenBase {
             }
         }
 
-        guiGraphics.pose().pushMatrix();
-        guiGraphics.pose().translate(width / 2, (height / 2) - ((allLines.size() * font.lineHeight) / 2));
+        guiGraphics.pose().pushPose();
+        guiGraphics.pose().translate(width / 2, (height / 2) - ((allLines.size() * font.lineHeight) / 2), 0);
         for(FormattedCharSequence line : allLines) {
             guiGraphics.drawCenteredString(font, line, 0, 0, 0xFFFFFFFF);
-            guiGraphics.pose().translate(0, 9);
+            guiGraphics.pose().translate(0, 9, 0);
         }
-        guiGraphics.pose().popMatrix();
+        guiGraphics.pose().popPose();
     }
 }

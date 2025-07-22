@@ -44,15 +44,17 @@ public class AuthScreen extends ScreenBase {
             ImmichClient client = new ImmichClient(authState.url(), authState.apiKey());
             CompletableFuture<ImmichClient.ValidateTokenResponse> validateTokenResultCompletableFuture = client.validateAccessToken();
             Screen screen = new LoadingScreen<>(Component.translatable("gui.immichmc.processing.auth"), validateTokenResultCompletableFuture, (response) -> {
-                if(response.authStatus()) {
-                    ImmichMC.setClient(client);
-                    Storages.authState = authState;
-                    Storages.save();
-                    return new ConfigScreen();
-                } else {
+                ImmichMC.setClient(client);
+                Storages.authState = authState;
+                Storages.save();
+                return new ConfigScreen();
+            }, (t) -> {
+                if(t instanceof ImmichClient.ImmichException immichException && immichException.getErrorResponse().statusCode() == 401) {
                     return new BasicTitleDescriptionScreen(Component.translatable("gui.immichmc.auth.failed.title"), Component.translatable("gui.immichmc.auth.failed.description").getString()).withPreviousScreen(this);
+                } else {
+                    return new ErrorScreen(t).withPreviousScreen(this);
                 }
-            }, (t) -> new ErrorScreen(t).withPreviousScreen(this));
+            });
             minecraft.setScreen(screen);
         }).width(140).build();
         nextButton.setPosition((width / 2) + 5, getFooterStartY());
@@ -62,25 +64,25 @@ public class AuthScreen extends ScreenBase {
     @Override
     public void renderBackground(GuiGraphics guiGraphics, int mouseX, int mouseY, float tickDelta) {
         super.renderBackground(guiGraphics, mouseX, mouseY, tickDelta);
-        guiGraphics.pose().pushMatrix();
-        guiGraphics.pose().translate(width / 2, 15);
+        guiGraphics.pose().pushPose();
+        guiGraphics.pose().translate(width / 2, 15, 0);
         drawHeaderBranding(guiGraphics, font);
-        guiGraphics.pose().translate(0, 25);
+        guiGraphics.pose().translate(0, 25, 0);
         guiGraphics.drawCenteredString(font, Component.translatable("gui.immichmc.immich.version", instanceInfo.version()), 0, 0, 0xFFFFFFFF);
-        guiGraphics.pose().translate(0, 15);
+        guiGraphics.pose().translate(0, 15, 0);
 
         if(instanceInfo.config().loginPageMessage() != null) {
             int strWidth = font.width(instanceInfo.config().loginPageMessage());
-            guiGraphics.pose().pushMatrix();
-            guiGraphics.pose().translate(2, 2);
+            guiGraphics.pose().pushPose();
+            guiGraphics.pose().translate(2, 2, 0);
             guiGraphics.fill(-strWidth/2 - 10, 0, strWidth/2 + 10, 18, 0xFF484D6A);
-            guiGraphics.pose().popMatrix();
+            guiGraphics.pose().popPose();
             guiGraphics.fill(-strWidth/2 - 10, 0, strWidth/2 + 10, 18, 0xFFD9DBFF);
             guiGraphics.drawString(font, instanceInfo.config().loginPageMessage(), -strWidth/2, 5, 0xFF003781, false);
-            guiGraphics.pose().translate(0, 30);
+            guiGraphics.pose().translate(0, 30, 0);
         }
 
         guiGraphics.drawCenteredString(font, Component.translatable("gui.immichmc.auth.title"), 0, 0, 0xFFFFFFFF);
-        guiGraphics.pose().popMatrix();
+        guiGraphics.pose().popPose();
     }
 }

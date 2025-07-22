@@ -39,7 +39,7 @@ public class AlbumsScreen extends ScreenBase {
         this.albumSelectionList = new AlbumSelectionList(minecraft, width, height - 70, 0, 34, albums);
         addRenderableWidget(albumSelectionList);
         albumSelectionList.setPosition(0, 30);
-        albumSelectionList.setSelectedIndex(preSelectedIndex);
+        albumSelectionList.setSelected(albumSelectionList.children().get(preSelectedIndex));
 
         Button nextButton = Button.builder(Component.translatable("gui.immichmc.button.done"), (btn) -> {
             onClose();

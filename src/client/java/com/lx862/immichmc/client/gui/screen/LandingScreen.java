@@ -61,15 +61,15 @@ public class LandingScreen extends ScreenBase {
     @Override
     public void renderBackground(GuiGraphics guiGraphics, int mouseX, int mouseY, float tickDelta) {
         super.renderBackground(guiGraphics, mouseX, mouseY, tickDelta);
-        guiGraphics.pose().pushMatrix();
-        guiGraphics.pose().translate(width / 2, 15);
+        guiGraphics.pose().pushPose();
+        guiGraphics.pose().translate(width / 2, 15, 0);
         drawHeaderBranding(guiGraphics, font);
-        guiGraphics.pose().translate(0, 25);
+        guiGraphics.pose().translate(0, 25, 0);
         guiGraphics.drawCenteredString(font, Component.translatable("gui.immichmc.landing.instruction"), 0, 0, 0xFFFFFFFF);
         if(Objects.equals(protocol, "http")) {
-            guiGraphics.pose().translate(0, 14);
+            guiGraphics.pose().translate(0, 14, 0);
             guiGraphics.drawCenteredString(font, Component.translatable("gui.immichmc.landing.http_warning").withStyle(ChatFormatting.YELLOW), 0, 0, 0xFFFFFFFF);
         }
-        guiGraphics.pose().popMatrix();
+        guiGraphics.pose().popPose();
     }
 }

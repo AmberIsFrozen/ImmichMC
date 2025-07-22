@@ -1,5 +1,6 @@
 package com.lx862.immichmc.client.gui.screen.generic;
 
+import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphics;
@@ -23,14 +24,16 @@ public abstract class ScreenBase extends Screen {
     }
 
     protected static void drawHeaderBranding(GuiGraphics guiGraphics, Font font) {
-        guiGraphics.blit(ResourceLocation.fromNamespaceAndPath("immichmc", "icon.png"), -20, 0, 20, 40, 0, 1, 0, 1);
+        RenderSystem.enableBlend();
+        guiGraphics.blit(ResourceLocation.fromNamespaceAndPath("immichmc", "icon.png"), -20, 0, 0, 0, 40, 40, 40, 40);
+        RenderSystem.disableBlend();
 
-        guiGraphics.pose().translate(0, 50);
+        guiGraphics.pose().translate(0, 50, 0);
 
-        guiGraphics.pose().pushMatrix();
-        guiGraphics.pose().scale(2, 2);
+        guiGraphics.pose().pushPose();
+        guiGraphics.pose().scale(2, 2, 0);
         guiGraphics.drawCenteredString(font, Component.translatable("gui.immichmc.brand"), 0, 0, 0xFFFFFFFF);
-        guiGraphics.pose().popMatrix();
+        guiGraphics.pose().popPose();
     }
 
     public int getFooterStartY() {

@@ -14,7 +14,7 @@ import java.util.function.Consumer;
 
 @Mixin(Screenshot.class)
 public class ScreenshotMixin {
-    @Inject(method = "method_22691", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/platform/NativeImage;writeToFile(Ljava/io/File;)V", shift = At.Shift.AFTER))
+    @Inject(method = "method_1661", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/platform/NativeImage;writeToFile(Ljava/io/File;)V", shift = At.Shift.AFTER))
     private static void ImmichMC_onScreenshotSave(NativeImage nativeImage, File file, Consumer consumer, CallbackInfo ci) {
         AssetManager.uploadAsset(file, Minecraft.getInstance().player);
     }

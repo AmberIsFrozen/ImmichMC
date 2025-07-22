@@ -31,11 +31,11 @@ public class LoadingScreen<T> extends ScreenBase {
     @Override
     public void renderBackground(GuiGraphics guiGraphics, int mouseX, int mouseY, float tickDelta) {
         super.renderBackground(guiGraphics, mouseX, mouseY, tickDelta);
-        guiGraphics.pose().pushMatrix();
-        guiGraphics.pose().translate((width / 2), (height / 2) - 25);
-        guiGraphics.pose().scale(2, 2);
+        guiGraphics.pose().pushPose();
+        guiGraphics.pose().translate((width / 2), (height / 2) - 25, 0);
+        guiGraphics.pose().scale(2, 2, 0);
         guiGraphics.drawCenteredString(font, title, 0, 0, 0xFFFFFFFF);
         guiGraphics.drawCenteredString(font, LoadingDotsText.get(Util.getMillis()), 0, 15, 0xFF888888);
-        guiGraphics.pose().popMatrix();
+        guiGraphics.pose().popPose();
     }
 }

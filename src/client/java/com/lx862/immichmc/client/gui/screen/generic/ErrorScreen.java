@@ -28,16 +28,16 @@ public class ErrorScreen extends ScreenBase {
 
         guiGraphics.drawCenteredString(font, title, width / 2, 10, 0xFFFFFFFF);
 
-        guiGraphics.pose().pushMatrix();
-        guiGraphics.pose().translate(width / 2, 25);
+        guiGraphics.pose().pushPose();
+        guiGraphics.pose().translate(width / 2, 25, 0);
 
         String errorMessage = throwable.toString();
         for(String line : errorMessage.split("\n")) {
             for(FormattedCharSequence lineWrapped : font.split(Component.literal(line), (int)(width * 0.9))) {
                 guiGraphics.drawCenteredString(font, lineWrapped, 0, 0, 0xFFFFAAAA);
-                guiGraphics.pose().translate(0, 9);
+                guiGraphics.pose().translate(0, 9, 0);
             }
         }
-        guiGraphics.pose().popMatrix();
+        guiGraphics.pose().popPose();
     }
 }

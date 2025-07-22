@@ -9,12 +9,13 @@ import net.minecraft.client.gui.components.ObjectSelectionList;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.FormattedText;
 import net.minecraft.network.chat.MutableComponent;
+import net.minecraft.util.FormattedCharSequence;
 
 import java.util.List;
 
 public class AlbumSelectionList extends ObjectSelectionList<AlbumSelectionList.Entry> {
     public AlbumSelectionList(Minecraft minecraft, int width, int height, int y, int itemHeight, Album[] albums) {
-        super(minecraft, width, height, y, itemHeight, 20);
+        super(minecraft, width, height, y, itemHeight);
         addEntry(new Entry(minecraft.font,null));
         for(Album album : albums) {
             addEntry(new Entry(minecraft.font, album));
@@ -66,14 +67,12 @@ public class AlbumSelectionList extends ObjectSelectionList<AlbumSelectionList.E
                 guiGraphics.drawString(font, itemText, x + width - font.width(itemText) - 4 - PADDING, y+PADDING, 0xFFFFFFFF);
             }
 
-            descriptionText.withStyle(ChatFormatting.GRAY);
-
-            List<FormattedText> descriptionLine = font.splitIgnoringLanguage(descriptionText, width);
+            List<FormattedCharSequence> descriptionLine = font.split(descriptionText, width);
 
             int i = 0;
-            for(FormattedText description : descriptionLine) {
+            for(FormattedCharSequence description : descriptionLine) {
                 if(i == 2) break;
-                guiGraphics.drawWordWrap(font, description, x+PADDING, y+9+(i*font.lineHeight)+PADDING, width, 0xFFFFFFFF);
+                guiGraphics.drawString(font, description, x+PADDING, y+9+(i*font.lineHeight)+PADDING, 0xFFFFFFFF);
                 i++;
             }
         }
