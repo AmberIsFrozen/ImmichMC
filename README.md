@@ -1,6 +1,8 @@
 # ImmichMC
 A client-side mod that automatically uploads your screenshot to an [Immich](https://immich.app/) instance of your choice, with option for auto-assigning to a specified album.
 
+Works on Minecraft Fabric 1.21.1/1.21.8.
+
 ![A Minecraft window with an identical screenshot uploaded to Immich](assets/preview.png)
 
 ## Prerequisite 
