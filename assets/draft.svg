@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 507.99999 285.75"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="draft.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.25"
+     inkscape:cx="576"
+     inkscape:cy="-788"
+     inkscape:window-width="1920"
+     inkscape:window-height="1002"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g37-8">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="508"
+       height="285.75"
+       id="page44"
+       margin="0"
+       bleed="0" />
+    <inkscape:page
+       x="44.450001"
+       y="-215.89999"
+       width="67.73333"
+       height="67.73333"
+       id="page45"
+       margin="0"
+       bleed="0"
+       inkscape:export-filename="logo.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <linearGradient
+       id="swatch32">
+      <stop
+         style="stop-color:#00812d;stop-opacity:1;"
+         offset="0"
+         id="stop32" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#262626;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round"
+       id="rect1"
+       width="508"
+       height="285.75"
+       x="-4.9999999e-06"
+       y="-2.8125e-06"
+       rx="0.52916664"
+       ry="0.52916664"
+       sodipodi:insensitive="true" />
+    <text
+       xml:space="preserve"
+       style="font-size:31.058px;line-height:1.3;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS';text-align:start;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#313131;fill-opacity:1;stroke-width:0.31058;stroke-linecap:round;stroke-linejoin:round"
+       x="190.33107"
+       y="111.21738"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:31.058px;font-family:Minecraft;-inkscape-font-specification:Minecraft;fill:#ffffff;fill-opacity:1;stroke-width:0.31058"
+         x="190.33107"
+         y="111.21738">ImmichMC</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:13.0363px;line-height:1.3;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS';text-align:start;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#313131;fill-opacity:1;stroke-width:0.130363;stroke-linecap:round;stroke-linejoin:round"
+       x="206.41747"
+       y="130.88734"
+       id="text1-3"><tspan
+         sodipodi:role="line"
+         id="tspan1-5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.0363px;font-family:Minecraft;-inkscape-font-specification:Minecraft;fill:#ffffff;fill-opacity:1;stroke-width:0.130363"
+         x="206.41747"
+         y="130.88734">Immich v1.134.0</tspan></text>
+    <g
+       id="g40"
+       transform="translate(-5.5930353,-5.2916666)">
+      <g
+         id="g39">
+        <rect
+           style="fill:#484d6a;fill-opacity:1;stroke-width:0.183416;stroke-linecap:round;stroke-linejoin:round"
+           id="rect2-1"
+           width="252.30035"
+           height="20.92831"
+           x="135.03033"
+           y="151.73048" />
+        <rect
+           style="fill:#d9dbff;fill-opacity:1;stroke-width:0.183416;stroke-linecap:round;stroke-linejoin:round"
+           id="rect2"
+           width="252.30035"
+           height="20.92831"
+           x="131.85538"
+           y="148.55553" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.9646px;line-height:1.3;font-family:Minecraft;-inkscape-font-specification:Minecraft;text-align:start;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#003781;fill-opacity:1;stroke-width:0.142416;stroke-linecap:round;stroke-linejoin:round"
+         x="145.72586"
+         y="160.58559"
+         id="text2"
+         transform="scale(0.98490108,1.0153304)"><tspan
+           sodipodi:role="line"
+           id="tspan2"
+           style="font-size:12.9646px;fill:#003781;fill-opacity:1;stroke-width:0.142416"
+           x="145.72586"
+           y="160.58559">Welcome to Amber's Immich Instance!</tspan></text>
+    </g>
+    <g
+       id="g38"
+       transform="matrix(0.94883671,0,0,0.94883671,-8.9540884,-17.847668)"
+       inkscape:export-filename="g38.png"
+       inkscape:export-xdpi="115.40333"
+       inkscape:export-ydpi="115.40333">
+      <g
+         id="g34"
+         transform="matrix(0.96300182,0,0,1.0388311,25.834205,3.3776084)">
+        <path
+           style="fill:#18c249;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round"
+           d="m 259.89275,32.155259 -31.30702,17.967418 0.79212,31.370824 30.56188,15.503572 29.93926,-15.390376 0.37147,-31.547893 z"
+           id="path2"
+           sodipodi:nodetypes="ccccccc" />
+        <path
+           style="fill:#ff8fc5;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round"
+           d="m 228.58573,50.122677 31.13828,12.245959 v -1e-6 l 0.16874,-30.213376 z"
+           id="path33"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:#ff0d0d;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round"
+           d="m 290.25046,50.058804 -30.52645,12.309832 -1.3e-4,-21.598245 0.16887,-8.615132 z"
+           id="path33-2"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:#1e83f7;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round"
+           d="m 259.72401,62.368635 -31.13828,-12.245958 0.79212,31.370824 z"
+           id="path34"
+           sodipodi:nodetypes="cccc" />
+        <path
+           style="fill:#ffb400;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round"
+           d="m 259.72401,62.368635 30.52645,-12.309831 -0.37147,31.547893 z"
+           id="path34-6"
+           sodipodi:nodetypes="cccc" />
+      </g>
+      <g
+         id="g37"
+         transform="matrix(1.0596911,0,0,1.0596911,-6.8524011,6.9132263)">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke-width:0.618471;stroke-linecap:round;stroke-linejoin:round"
+           d="m 266.87133,36.63136 -20.61,12.540005 V 72.15697 l 20.61,11.115326 L 287.1926,72.15697 V 49.171365 Z"
+           id="path35"
+           sodipodi:nodetypes="ccccccc" />
+        <path
+           style="fill:#d9d9d9;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round"
+           d="m 287.19261,49.171365 -20.32116,8.822608 V 83.272296 L 287.19261,72.15697 Z"
+           id="path36"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round"
+           d="m 246.26133,49.171365 20.61012,8.822607 20.32116,-8.822607 -20.32127,-12.540004 z"
+           id="path37" />
+      </g>
+    </g>
+    <g
+       id="g42"
+       transform="translate(0,2.6458334)">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1.56115;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         id="rect40"
+         width="251.68886"
+         height="20.606106"
+         x="127.36211"
+         y="188.25766" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.9646px;line-height:1.3;font-family:Minecraft;-inkscape-font-specification:Minecraft;text-align:start;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#999999;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round"
+         x="131.61304"
+         y="202.89644"
+         id="text40"><tspan
+           sodipodi:role="line"
+           id="tspan40"
+           style="fill:#999999;fill-opacity:1;stroke-width:0.264583"
+           x="131.61304"
+           y="202.89644">Enter API Key Here...</tspan></text>
+    </g>
+    <g
+       id="g41"
+       transform="matrix(1.1571709,0,0,1.1571709,-23.518038,-48.810916)">
+      <rect
+         style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.5875;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         id="rect41"
+         width="95.228134"
+         height="16.463802"
+         x="130.58789"
+         y="260.42743" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.1623px;line-height:1.3;font-family:Minecraft;-inkscape-font-specification:Minecraft;text-align:start;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.85661;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         x="153.06509"
+         y="273.68695"
+         id="text41"><tspan
+           sodipodi:role="line"
+           id="tspan41"
+           style="fill:#ffffff;fill-opacity:1;stroke-width:1.85661"
+           x="153.06509"
+           y="273.68695">&lt; Back</tspan></text>
+    </g>
+    <g
+       id="g41-0"
+       transform="matrix(1.1662621,0,0,1.1662621,115.91378,-51.328174)">
+      <rect
+         style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.5875;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         id="rect41-2"
+         width="95.228134"
+         height="16.463802"
+         x="130.58789"
+         y="260.42743" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.1623px;line-height:1.3;font-family:Minecraft;-inkscape-font-specification:Minecraft;text-align:start;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.85661;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         x="149.89014"
+         y="273.68695"
+         id="text41-3"><tspan
+           sodipodi:role="line"
+           id="tspan41-7"
+           style="fill:#ffffff;fill-opacity:1;stroke-width:1.85661"
+           x="149.89014"
+           y="273.68695">Sign In...</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.9646px;line-height:1.3;font-family:Minecraft;-inkscape-font-specification:Minecraft;text-align:start;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.5875;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       x="232.41496"
+       y="184.06398"
+       id="text42"><tspan
+         sodipodi:role="line"
+         id="tspan42"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:1.5875"
+         x="232.41496"
+         y="184.06398">Sign in</tspan></text>
+    <g
+       id="g38-2"
+       transform="matrix(1.0055468,0,0,1.0055468,-199.49691,-252.8855)"
+       inkscape:export-filename="g38.png"
+       inkscape:export-xdpi="115.40333"
+       inkscape:export-ydpi="115.40333">
+      <g
+         id="g34-9"
+         transform="matrix(0.96300182,0,0,1.0388311,25.834205,3.3776084)">
+        <path
+           style="fill:#18c249;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round"
+           d="m 259.89275,32.155259 -31.30702,17.967418 0.79212,31.370824 30.56188,15.503572 29.93926,-15.390376 0.37147,-31.547893 z"
+           id="path2-3"
+           sodipodi:nodetypes="ccccccc" />
+        <path
+           style="fill:#ff8fc5;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round"
+           d="m 228.58573,50.122677 31.13828,12.245959 v -1e-6 l 0.16874,-30.213376 z"
+           id="path33-1"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:#ff0d0d;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round"
+           d="m 290.25046,50.058804 -30.52645,12.309832 -1.3e-4,-21.598245 0.16887,-8.615132 z"
+           id="path33-2-9"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:#1e83f7;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round"
+           d="m 259.72401,62.368635 -31.13828,-12.245958 0.79212,31.370824 z"
+           id="path34-4"
+           sodipodi:nodetypes="cccc" />
+        <path
+           style="fill:#ffb400;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round"
+           d="m 259.72401,62.368635 30.52645,-12.309831 -0.37147,31.547893 z"
+           id="path34-6-7"
+           sodipodi:nodetypes="cccc" />
+      </g>
+      <g
+         id="g37-8"
+         transform="matrix(0.95946406,0,0,0.95946406,19.860753,12.849091)">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke-width:0.618471;stroke-linecap:round;stroke-linejoin:round"
+           d="m 266.87133,36.63136 -20.61,12.540005 V 72.15697 l 20.61,11.115326 L 287.1926,72.15697 V 49.171365 Z"
+           id="path35-4"
+           sodipodi:nodetypes="ccccccc" />
+        <path
+           style="fill:#d9d9d9;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round"
+           d="m 287.19261,49.171365 -20.32116,8.822608 V 83.272296 L 287.19261,72.15697 Z"
+           id="path36-5"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round"
+           d="m 246.26133,49.171277 20.61012,8.822695 20.32116,-8.822607 -20.32128,-12.540005 z"
+           id="path37-0"
+           sodipodi:nodetypes="ccccc" />
+      </g>
+    </g>
+  </g>
+</svg>

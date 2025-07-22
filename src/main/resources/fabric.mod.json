@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "immichmc",
+  "version": "${version}",
+  "name": "ImmichMC",
+  "description": "Auto-upload screenshots to an immich instance!",
+  "authors": [
+    {
+      "name": "AmberFrost",
+      "contact": {
+        "homepage": "https://lx862.com"
+      }
+    }
+  ],
+  "contact": {
+    "homepage": "https://github.com/AmberIsFrozen/ImmichMC",
+    "issues": "https://github.com/AmberIsFrozen/ImmichMC/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/immichmc/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.lx862.immichmc.client.ImmichMC"
+    ],
+    "modmenu": [
+      "com.lx862.immichmc.client.ModMenuImpl"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "immichmc.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabric": "*",
+    "fabricloader": ">=0.16.10",
+    "minecraft": ">=${minecraft_version}"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
