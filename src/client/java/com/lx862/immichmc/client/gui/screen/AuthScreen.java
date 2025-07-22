@@ -44,15 +44,17 @@ public class AuthScreen extends ScreenBase {
             ImmichClient client = new ImmichClient(authState.url(), authState.apiKey());
             CompletableFuture<ImmichClient.ValidateTokenResponse> validateTokenResultCompletableFuture = client.validateAccessToken();
             Screen screen = new LoadingScreen<>(Component.translatable("gui.immichmc.processing.auth"), validateTokenResultCompletableFuture, (response) -> {
-                if(response.authStatus()) {
-                    ImmichMC.setClient(client);
-                    Storages.authState = authState;
-                    Storages.save();
-                    return new ConfigScreen();
-                } else {
+                ImmichMC.setClient(client);
+                Storages.authState = authState;
+                Storages.save();
+                return new ConfigScreen();
+            }, (t) -> {
+                if(t instanceof ImmichClient.ImmichException) {
                     return new BasicTitleDescriptionScreen(Component.translatable("gui.immichmc.auth.failed.title"), Component.translatable("gui.immichmc.auth.failed.description").getString()).withPreviousScreen(this);
+                } else {
+                    return new ErrorScreen(t).withPreviousScreen(this);
                 }
-            }, (t) -> new ErrorScreen(t).withPreviousScreen(this));
+            });
             minecraft.setScreen(screen);
         }).width(140).build();
         nextButton.setPosition((width / 2) + 5, getFooterStartY());
