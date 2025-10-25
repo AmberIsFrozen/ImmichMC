@@ -14,7 +14,7 @@ import java.util.List;
 
 public class AlbumSelectionList extends ObjectSelectionList<AlbumSelectionList.Entry> {
     public AlbumSelectionList(Minecraft minecraft, int width, int height, int y, int itemHeight, Album[] albums) {
-        super(minecraft, width, height, y, itemHeight, 20);
+        super(minecraft, width, height, y, itemHeight);
         addEntry(new Entry(minecraft.font,null));
         for(Album album : albums) {
             addEntry(new Entry(minecraft.font, album));
@@ -26,15 +26,8 @@ public class AlbumSelectionList extends ObjectSelectionList<AlbumSelectionList.E
         return 260;
     }
 
-    @Override
-    protected void renderHeader(GuiGraphics guiGraphics, int x, int y) {
-        // -1 because of the none entry
-        Component albumAvailableText = Component.translatable("gui.immichmc.album.list", children().size()-1);
-        guiGraphics.drawString(minecraft.font, albumAvailableText, x + (getRowWidth() / 2) - (minecraft.font.width(albumAvailableText)/2), y+2, 0xFFFFFFFF);
-    }
-
     public static class Entry extends ObjectSelectionList.Entry<Entry> {
-        private static final int PADDING = 2;
+        private static final int PADDING = 4;
         private final Album immichAlbum;
         private final Font font;
 
@@ -49,31 +42,32 @@ public class AlbumSelectionList extends ObjectSelectionList<AlbumSelectionList.E
 
         @Override
         public Component getNarration() {
-            return Component.literal("");
+            return immichAlbum == null ? Component.translatable("gui.immichmc.album.none.title") : Component.literal(immichAlbum.albumName());
         }
 
         @Override
-        public void render(GuiGraphics guiGraphics, int index, int y, int x, int width, int height, int mouseX, int mouseY, boolean hovering, float partialTick) {
+        public void renderContent(GuiGraphics guiGraphics, int mouseX, int mouseY, boolean isHovering, float partialTick) {
             MutableComponent titleText = immichAlbum == null ? Component.translatable("gui.immichmc.album.none.title") : Component.literal(immichAlbum.albumName());
             MutableComponent descriptionText = immichAlbum == null ? Component.translatable("gui.immichmc.album.none.description") : Component.literal(immichAlbum.description());
             MutableComponent ownerText = immichAlbum == null ? Component.empty() : Component.literal(" ").append(Component.translatable("gui.immichmc.album.owner", immichAlbum.owner().name())).withStyle(ChatFormatting.GRAY);
             if(immichAlbum == null) titleText.withStyle(ChatFormatting.GOLD);
 
-            guiGraphics.drawString(font, titleText.append(ownerText), x + PADDING, y + PADDING, 0xFFFFFFFF);
+            guiGraphics.drawString(font, titleText.append(ownerText), getX() + PADDING, getY() + PADDING, 0xFFFFFFFF);
 
             if(immichAlbum != null) {
                 Component itemText = Component.translatable("gui.immichmc.album.items", immichAlbum.assetCount()).withStyle(ChatFormatting.GRAY);
-                guiGraphics.drawString(font, itemText, x + width - font.width(itemText) - 4 - PADDING, y+PADDING, 0xFFFFFFFF);
+                guiGraphics.drawString(font, itemText, getX() + getWidth() - font.width(itemText) - PADDING, getY()+PADDING, 0xFFFFFFFF);
             }
 
             descriptionText.withStyle(ChatFormatting.GRAY);
 
-            List<FormattedText> descriptionLine = font.splitIgnoringLanguage(descriptionText, width);
+            List<FormattedText> descriptionLine = font.splitIgnoringLanguage(descriptionText, getWidth());
 
             int i = 0;
+            int lineHeight = (int)(font.lineHeight * 1.2);
             for(FormattedText description : descriptionLine) {
                 if(i == 2) break;
-                guiGraphics.drawWordWrap(font, description, x+PADDING, y+9+(i*font.lineHeight)+PADDING, width, 0xFFFFFFFF);
+                guiGraphics.drawWordWrap(font, description, getX()+PADDING, getY()+lineHeight+(i*lineHeight)+PADDING, getWidth(), 0xFFFFFFFF);
                 i++;
             }
         }
