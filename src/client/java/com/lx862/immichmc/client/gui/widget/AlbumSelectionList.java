@@ -48,8 +48,9 @@ public class AlbumSelectionList extends ObjectSelectionList<AlbumSelectionList.E
         @Override
         public void renderContent(GuiGraphics guiGraphics, int mouseX, int mouseY, boolean isHovering, float partialTick) {
             MutableComponent titleText = immichAlbum == null ? Component.translatable("gui.immichmc.album.none.title") : Component.literal(immichAlbum.albumName());
-            MutableComponent descriptionText = immichAlbum == null ? Component.translatable("gui.immichmc.album.none.description") : Component.literal(immichAlbum.description());
-            MutableComponent ownerText = immichAlbum == null ? Component.empty() : Component.literal(" ").append(Component.translatable("gui.immichmc.album.owner", immichAlbum.owner().name())).withStyle(ChatFormatting.GRAY);
+            MutableComponent descriptionText = immichAlbum == null ? Component.translatable("gui.immichmc.album.none.description") : Component.literal(immichAlbum.description() == null ? "" : immichAlbum.description());
+            // Immich may omit the owner (e.g. shared albums), so don't assume it's present
+            MutableComponent ownerText = immichAlbum == null || immichAlbum.owner() == null || immichAlbum.owner().name() == null ? Component.empty() : Component.literal(" ").append(Component.translatable("gui.immichmc.album.owner", immichAlbum.owner().name())).withStyle(ChatFormatting.GRAY);
             if(immichAlbum == null) titleText.withStyle(ChatFormatting.GOLD);
 
             guiGraphics.drawString(font, titleText.append(ownerText), getX() + PADDING, getY() + PADDING, 0xFFFFFFFF);
